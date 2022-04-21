@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>calculator</title>
+  </head>
+  <body>
+    <h1>Basic calculator</h1>
+
+    <form name="zadavani">
+      zadej prvni cislo:
+      <input type="text" name="cis1" id="prvni" />
+      <br />
+      zadej druhe cislo:
+      <input type="text" name="cis2" id="druhe" />
+      <br />
+      vyber pozadovanou operaci:
+      <br />
+      <input type="radio" id="operace" name="plus" value="plus" />
+      <label for="soucet">+</label>
+      <br />
+      <input type="radio" id="operace" name="minus" value="minus" />
+      <label for="rozdil">-</label>
+      <br />
+      <input type="radio" id="operace" name="lomitko" value="lomitko" />
+      <label for="deleno">/</label>
+      <br />
+      <input type="radio" id="operace" name="krat" value="krat" />
+      <label for="nasobeni">*</label>
+      <br />
+    </form>
+    <script src="soucet.js"></script>
+    <button onclick="soucet()">Vypocti</button>
+  </body>
+</html>
